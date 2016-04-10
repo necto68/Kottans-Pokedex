@@ -1,0 +1,58 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Roboto;
+    background-color: #EDEEED;
+}
+
+.pokenmon {
+	will-change: transform;
+}
+
+.pokemon:hover {
+	background-color: #00BCD5 !important;
+	cursor: pointer;
+}
+
+.pokemonPaper-enter {
+	transform: scale(0);
+}
+
+.pokemonPaper-enter.pokemonPaper-enter-active {
+	transform: scale(1);
+	transition: transform 500ms ease-in;
+}
+
+.pokemonPaper-leave {
+	transform: scale(1);
+}
+
+.pokemonPaper-leave.pokemonPaper-leave-active {
+	transform: scale(0);
+	transition: transform 300ms ease-in;
+}
+
+.pokemonModal {
+	position: fixed;
+	width: 300px;
+	height: 450px;
+	margin: 20px 20px 20px 0px;
+	top: 64px;
+	left: calc(100%/2 - 720px/2 + 720px);
+}
+
+@media (max-width: 1345px){
+	.pokemonModal {
+		left: calc(100%/2 - 300px/2);
+	}
+}
+
+.pokemonTable {
+	width: 90%;
+	border-collapse: collapse;
+}
+
+.pokemonTable td{
+	border: 1px solid black;
+	text-align: center;
+}
